@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+  master:
+    build: ./hadoop-master
+    ports:
+      - "9001:9000"
+      - "9871:9870"
+      - "8288:8088"
+      - "19889:19888"
+      - "8388:8188"
+    container_name: "master2"
+  slave1:
+    build: ./hadoop-slave
+    container_name: "slave21"
+    ports:
+      - "9911:9864"
+      - "8141:8042"
+  slave2:
+    build: ./hadoop-slave
+    container_name: "slave22"
+    ports:
+      - "9912:9864"
+      - "8142:8042"
+  slave3:
+    build: ./hadoop-slave
+    container_name: "slave23"
+    ports:
+      - "9913:9864"
+      - "8143:8042"
+  # slave4:
+  #   build: ./hadoop-slave
+  #   container_name: "slave24"
+  #   ports:
+  #     - "9914:9864"
+  #     - "8144:8042"
+  # slave5:
+  #   build: ./hadoop-slave
+  #   container_name: "slave25"
+  #   ports:
+  #     - "9915:9864"
+  #     - "8145:8042"
