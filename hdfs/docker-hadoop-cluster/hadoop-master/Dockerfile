@@ -24,4 +24,9 @@ ENV PATH $PATH:$HADOOP_HOME/bin
 
 ADD hdfs-site.xml /usr/local/hadoop/etc/hadoop/hdfs-site.xml
 
+# Savas: Hadoop Native Libraries
+ADD native /usr/local/hadoop/lib/native
+ENV HADOOP_COMMON_LIB_NATIVE_DIR $HADOOP_HOME/lib/native
+ENV HADOOP_OPTS "-Djava.library.path=$HADOOP_HOME/lib"
+
 CMD ["/etc/bootstrap.sh", "-d"]
