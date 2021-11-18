@@ -1,1 +1,9 @@
 data/
+spark/docker/base/hdfs/namenode/
+spark/docker/base/postgresql/
+spark/docker/base/hdfs/datanode1/
+spark/docker/base/hdfs/datanode2/
+
+spark/docker/workspace/*
+!spark/docker/workspace/*.ipynb
+
