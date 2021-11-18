@@ -1,4 +1,4 @@
-data/
+# data/
 spark/docker/base/hdfs/namenode/
 spark/docker/base/postgresql/
 spark/docker/base/hdfs/datanode1/
