@@ -43,7 +43,7 @@ ln -sf /dev/stdout $SPARK_WORKER_LOG
 
 COPY start-spark.sh /
 
-# Install jupyterlab
-RUN pip3 install jupyterlab pyspark
+# Install jupyterlab and dependencies
+RUN pip3 install jupyterlab pyspark kafka_python tweepy seaborn sseclient
 
 CMD ["/bin/bash", "/start-spark.sh"]
