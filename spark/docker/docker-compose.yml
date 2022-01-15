@@ -185,7 +185,7 @@ services:
     #       memory: 500m
 
   hue:
-    # image: fjardim/hue
+    # To login use admin/admin
     image: gethue/hue:latest
     hostname: hue
     container_name: hue
