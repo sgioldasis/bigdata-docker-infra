@@ -185,6 +185,7 @@ services:
     #     limits:
     #       memory: 500m
 
+  # Access Hue at localhost:8888 using admin/admin
   hue:
     # To login use admin/admin
     image: gethue/hue:latest
@@ -225,6 +226,7 @@ services:
         MYSQL_PASSWORD: secret
 
   minio:
+    # Access Minio at localhost:9001 using savas/savas123
     image: minio/minio
     container_name: minio
     volumes:
