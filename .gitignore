@@ -7,4 +7,5 @@ spark/docker/base/hdfs/datanode2/
 spark/docker/workspace/*
 !spark/docker/workspace/*.ipynb
 spark/docker/base/mysql/data/
+spark/docker/data/s3/
 
